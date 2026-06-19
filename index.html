@@ -46,10 +46,12 @@
     <p>특징 맵에 비선형 활성화 함수(예: ReLU)를 적용하여 뉴런의 활성화 여부를 최종적으로 확정한 출력 결과입니다.</p>
     <h1>CNN에서 특징 맵(Feature Map)</h1>
     <p>합성곱 층(Convolution Layer)에서 필터(Filter)가 입력 데이터를 순회하며 합성곱 연산을 통해 추출한 출력 데이터입니다.</p>
-
+    <h1>Conv 레이어에서 활성화 맵의 출력 사이즈 계산<br>
+        Conv 레이어에서 활성화 맵(Activation/Feature Map)의 출력 크기는 입력 크기, 필터(커널) 크기, 패딩(Padding), 그리고 스트라이드(Stride)를 사용하여 계산합니다.다음 공식을 통해 가로(Width)와 세로(Height) 크기를 각각 구할 수 있습니다.\(Output = \lfloor \frac{Input + 2 \times Padding - Kernel}{Stride} \rfloor + 1\)📝 변수 설명Input (입력 크기): 입력 데이터의 가로 또는 세로 크기Kernel (필터 크기): 합성곱 연산을 수행하는 필터의 크기Padding (패딩): 입력 데이터의 가장자리에 추가하는 0의 개수Stride (스트라이드): 필터를 이동시키는 간격\(\lfloor \dots \rfloor\): 소수점 이하를 버림(내림)하는 연산
+    </h1>
+    
     
 
-Conv 레이어에서 활성화 맵의 출력 사이즈 계산
 pooling layer 개념
 ReNet, AlexNet, GoogLeNet, VGGNet, ResNet 특징으로 구분이 가능
 
